@@ -1,4 +1,4 @@
-import Layout from "../components/Layout"
+import Layout from "../../components/Layout"
 import { Flex, Heading, Text } from "@chakra-ui/react"
 
 export default function SecureFiles() {

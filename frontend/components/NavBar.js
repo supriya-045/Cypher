@@ -11,10 +11,10 @@ import {
 	useDisclosure
 } from "@chakra-ui/react";
 import { links } from "../utils/constants";
-import logo from '../../public/logo.png'
-import { NavLink } from "../components/NavLink";
+import logo from '../public/logo.png'
+import NavLink from "./NavLink";
 
-export function NavBar() {
+export default function NavBar() {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 	return (
 		<Box as="nav" role="navigation" position="sticky" top="0" zIndex="999" backdropFilter="blur(6px)">

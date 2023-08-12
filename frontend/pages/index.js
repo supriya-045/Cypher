@@ -21,9 +21,9 @@ import {
 	TagLabel
 } from "@chakra-ui/react";
 import { FaLock, FaUnlock } from "react-icons/fa";
-import { faqs, features } from "./utils/constants";
+import { faqs, features } from "../utils/constants";
 import React from 'react';
-import Layout from "./components/Layout";
+import Layout from "../components/Layout";
 import hero from '../public/hero.png';
 
 export default function Home() {

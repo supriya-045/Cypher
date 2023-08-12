@@ -1,4 +1,4 @@
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 import {
 	Flex,
 	Box,
@@ -17,8 +17,8 @@ import {
 	HiOutlineClipboardDocument,
 	HiOutlineClipboardDocumentCheck,
 } from "react-icons/hi2";
-import { Error } from "../components/Error";
-import { decrypt } from "../utils/encryption";
+import { Error } from "../../components/Error";
+import { decrypt } from "../../utils/encryption";
 import axios from "axios";
 
 export default function DecodeSecret() {

@@ -1,5 +1,5 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
-import logo from '../../public/logo.png'
+import logo from '../public/logo.png'
 
 export default function Footer() {
 	return (

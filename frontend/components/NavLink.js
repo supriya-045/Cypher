@@ -2,7 +2,7 @@ import { Box, HStack, Link, Text } from "@chakra-ui/react";
 import { TbHomeShield } from "react-icons/tb";
 import { useRouter } from "next/router";
 
-export function NavLink({ title, route, icon }) {
+export default function NavLink({ title, route, icon }) {
 	const router = useRouter();
 	const active = isActive(router, route);
 	return (
@@ -23,7 +23,9 @@ export function NavLink({ title, route, icon }) {
 					bgGradient={active ? "linear-gradient(-90deg, #FCEF04, #EC458d, #474ED7)" : "linear-gradient(-90deg, #000000, #000000)"}
 					bgClip="text"
 					fontWeight={active ? "bold" : ""}
-					children={title} />
+				>
+					{title}
+				</Text>
 			</HStack>
 		</Link>
 	);

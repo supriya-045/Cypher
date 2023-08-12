@@ -1,4 +1,4 @@
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 import {
     Flex,
     Select,
@@ -21,10 +21,10 @@ import {
     HiOutlineClipboardDocumentCheck,
 } from "react-icons/hi2";
 import { TbUserShare } from "react-icons/tb";
-import { Error } from "../components/Error";
-import { encrypt } from "../utils/encryption";
+import { Error } from "../../components/Error";
+import { encrypt } from "../../utils/encryption";
 import axios from "axios";
-import { toBase58 } from "../utils/base";
+import { toBase58 } from "../../utils/base";
 
 export default function ShareSecret() {
     return (

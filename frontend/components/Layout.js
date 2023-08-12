@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import Footer from "./Footer";
-import { NavBar } from "./NavBar";
+import NavBar from "./NavBar";
 
 export default function Layout(props) {
 	return (
