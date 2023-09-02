@@ -46,10 +46,10 @@ export function DecodeSecretCard() {
 	}, []);
 
 	const parseId = (urlOrId) => {
-		if (urlOrId.includes("#")) {
-			setCompositeKey(urlOrId.split("#")[1]);
+		if (urlOrId.includes("decode-secret")) {
+			urlOrId = urlOrId.split("#")[1];
 		}
-		const [id, key] = compositeKey.split(":");
+		const [id, key] = urlOrId.split(":");
 		return { id, key };
 	}
 
