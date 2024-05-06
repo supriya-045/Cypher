@@ -63,3 +63,5 @@ export const faqs = [
 		solution: "You start by entering the message/secret to secure, maximum read counts, and expiry timeperiod. Cypher generates an encryption key and uses AES-GCM to encrypt your messages. Now encrypted message is stored on to the database with given max reads and expiry timestamp. A unique url is generated which points to your encrypted message. Now share this URL instead of sharing secrets in plaintext.",
 	}
 ]
+
+export const apiHostUrl = 'https://cypher-9zmx.onrender.com';

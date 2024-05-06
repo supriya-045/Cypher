@@ -25,6 +25,7 @@ import { Error } from "../../components/Error";
 import { encrypt } from "../../utils/encryption";
 import axios from "axios";
 import { toBase58 } from "../../utils/base";
+import { apiHostUrl } from "../../utils/constants";
 
 export default function ShareSecret() {
     return (
@@ -66,7 +67,7 @@ export function EncodeSecretCard() {
             });
             let requestConfig = {
                 method: 'post',
-                url: 'https://cypher-backend--supriya-045.repl.co/api/store',
+                url: `${apiHostUrl}/api/store`,
                 headers: {
                     'Content-Type': 'application/json'
                 },

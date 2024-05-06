@@ -20,6 +20,7 @@ import {
 import { Error } from "../../components/Error";
 import { decrypt } from "../../utils/encryption";
 import axios from "axios";
+import { apiHostUrl } from "../../utils/constants";
 
 export default function DecodeSecret() {
 	return (
@@ -63,7 +64,7 @@ export function DecodeSecretCard() {
 			console.log(id, key);
 			let requestConfig = {
 				method: 'get',
-				url: `https://cypher-backend--supriya-045.repl.co/api/fetch?id=${id}`,
+				url: `${apiHostUrl}/api/fetch?id=${id}`,
 				headers: {
 					'Content-Type': 'application/json'
 				},
